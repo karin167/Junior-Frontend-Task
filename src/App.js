@@ -38,7 +38,7 @@ export default function App() {
       },
     })
       .then(function (response) {
-        console.log("Contributors Results:", response);
+        // console.log("Contributors Results:", response);
         return response.json(); // HTTP response
       })
       .then(function (contributors) {
