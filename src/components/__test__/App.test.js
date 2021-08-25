@@ -38,11 +38,11 @@ it("testing the the main div from App.js", async () => {
 
 //QueryBy
 
-it("Find QueryBy", async () => {
-  render(<App title="Enter" />);
-  const headingElement = screen.queryByText(/dogs/i);
-  expect(headingElement).not.toBeInTheDocument();
-});
+// it("Find QueryBy", async () => {
+//   render(<App title="Enter" />);
+//   const headingElement = screen.queryByText(/dogs/i);
+//   expect(headingElement).not.toBeInTheDocument();
+// });
 
 // getAllByRole:
 
