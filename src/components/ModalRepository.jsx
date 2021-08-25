@@ -13,7 +13,7 @@ function ModalRepository({ repository, closeModalHandler }) {
       <p>Description: {repository.description}</p>
       <p>Topics: {repository.topics}</p>
       <p>Starts count: {repository.stargazers_count}</p>
-      <p>Contributors</p>
+      <p>Contributors:</p>
       <table className="modalTable">
         <thead>
           <tr>
