@@ -18,7 +18,7 @@ function RepositoryTable({ items, selectHandler }) {
         <tbody>
           {items.map((repo) => {
             return (
-              <tr key={repo.name}>
+              <tr key={repo.id}>
                 <td>
                   <button
                     className="button-repo-name"

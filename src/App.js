@@ -59,7 +59,11 @@ export default function App() {
       <div className="Search-And-Label">
         <label title="label">
           Enter search term:
-          <input id="search" type="text" />
+          <input
+            id="search"
+            type="text"
+            placeholder="write something here..."
+          />
         </label>
 
         <button

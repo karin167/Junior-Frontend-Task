@@ -9,7 +9,7 @@ function ModalRepository({ repository, closeModalHandler }) {
   return (
     <Modal isOpen={true} contentLabel="Example Modal" ariaHideApp={false}>
       <p>Name: {repository.name}</p>
-      <img src={repository.owner.avatar_url} height="50px" />
+      <img src={repository.owner.avatar_url} alt="" height="50px" />
       <p>Description: {repository.description}</p>
       <p>Topics: {repository.topics}</p>
       <p>Starts count: {repository.stargazers_count}</p>
@@ -29,6 +29,7 @@ function ModalRepository({ repository, closeModalHandler }) {
                 <td>{contributor.login}</td>
                 <td>
                   <img
+                    alt=""
                     height="50"
                     width="50"
                     src={contributor.avatar_url}
