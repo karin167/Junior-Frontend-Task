@@ -5,16 +5,18 @@ import "@testing-library/jest-dom";
 describe("testig-App.js", () => {
   it("testin the title label from App.js", async () => {
     render(<App title="label" />);
-    const headingElement = screen.getByTitle("label");
-    expect(headingElement).toBeInTheDocument();
+    const titleElement = screen.getByTitle("label");
+    expect(titleElement).toBeInTheDocument();
   });
 
   it("testing the the main div from App.js", async () => {
     render(<App title="wrap-div" />);
-    const headingElement = screen.getByTestId("wrap-div");
-    expect(headingElement).toBeInTheDocument();
+    const testIdElement = screen.getByTestId("wrap-div");
+    expect(testIdElement).toBeInTheDocument();
   });
 });
+
+//TYPES OF TESTING:
 
 // getByText:
 
